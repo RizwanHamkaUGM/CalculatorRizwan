@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator Rizwan</title>
+</head>
+<body>
+    <div class="calculator">
+        <h2>Calculator Rizwan</h2>
+        <div class="input-group">
+            <label for="num1">Bilangan Pertama:</label>
+            <input type="number" id="num1" placeholder="Masukkan angka">
+        </div>
+        <div class="input-group">
+            <label for="num2">Bilangan Kedua:</label>
+            <input type="number" id="num2" placeholder="Masukkan angka">
+        </div>
+        <div class="buttons">
+            <button class="add" onclick="calculate('add')">+ Tambah</button>
+            <button class="subtract" onclick="calculate('subtract')">- Kurang</button>
+            <button class="multiply" onclick="calculate('multiply')">× Kali</button>
+            <button class="divide" onclick="calculate('divide')">÷ Bagi</button>
+        </div>
+        <div class="error" id="error"></div>
+        <div class="result">
+            Hasil: <span id="result">0</span>
+        </div>
+    </div>
+
+    <script src="calculaor.js"></script>
+</body>
+</html>
